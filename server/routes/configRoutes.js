@@ -1,0 +1,4 @@
+exports.routesInit = (app) =>{
+
+    
+}
