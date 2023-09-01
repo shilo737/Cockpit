@@ -1,9 +1,10 @@
-function App() {
- 
+import PilotControl from "./components/pages/PilotControl"
 
-  return (
+function App() {
+
+return (
     <div >
-      <p className="text-white bg-blue-500">Work</p>
+    <PilotControl/>
     </div>
   )
 }
