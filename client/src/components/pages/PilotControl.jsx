@@ -21,24 +21,22 @@ const PilotControl = () => {
   }, [dispatch]);
 
   return (
-    <div>
-     <div className="flex  items-center justify-center mt-10 gap-5">
-  <button
-    className="btn bg-blue-600 text-white hover:bg-blue-900"
-    onClick={() => setOpenComponent(false)}
-  >
-    Visual
-  </button>
-  <button
-    className="btn bg-green-600 text-white hover:bg-green-900"
-    onClick={() => setOpenComponent(true)}
-  >
-    Text
-  </button>
-</div>
-
-
-      {openComponent ? <TextCockpit /> : <VisualCockpit />}
+    <div className="">
+      <div className="flex items-center justify-center gap-5">
+        <button
+          className="btn bg-blue-600 text-white hover:bg-blue-900 mt-10"
+          onClick={() => setOpenComponent(false)}
+        >
+          Visual
+        </button>
+        <button
+          className="btn bg-green-600 text-white hover:bg-green-900 mt-10"
+          onClick={() => setOpenComponent(true)}
+        >
+          Text
+        </button>
+      </div>
+         {openComponent ? <TextCockpit /> : <VisualCockpit />}
     </div>
   );
 };
