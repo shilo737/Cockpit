@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const monitorSlice = createSlice({
   name: "monitor",
   initialState: {
-    altitude:0,
+    altitude: 0,
     HIS: 0,
     ADI: 0,
   },

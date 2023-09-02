@@ -34,10 +34,9 @@ async function getInput(question) {
 (async () => {
   while (true) {
     // Prompt the user for altitude, HIS, ADI, and confirmation
-    const altitude = await getInput('ENTER ALTITUDE between 0 to 3000: ');
-    const HIS = await getInput('ENTER HIS between 0 to 360: ');
-    const ADI = await getInput('ENTER ADI 100 / -100 / 0:');
-    
+    const altitude = parseInt(await getInput('ENTER ALTITUDE between 0 to 3000: '), 10);
+    const HIS = parseInt(await getInput('ENTER HIS between 0 to 360: '), 10);
+    const ADI = parseInt(await getInput('ENTER ADI 100 / -100 / 0:'), 10);    
     // Prompt for confirmation and convert the response to lowercase
     const question = (await getInput('Are you sure you want to send the data? (Y/N) ')).toLowerCase();
 

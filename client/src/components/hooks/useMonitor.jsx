@@ -1,14 +1,14 @@
-import React from 'react'
-import { useSelector }  from 'react-redux'
+import React from "react";
+import { useSelector } from "react-redux";
 
 const useMonitor = () => {
-const {altitude,HIS,ADI} = useSelector((store) => store.monitorReducers)
+  const { altitude, HIS, ADI } = useSelector((store) => store.monitorReducers);
 
   return {
     altitude,
     ADI,
-    HIS
-  }
-}
+    HIS,
+  };
+};
 
-export default useMonitor
+export default useMonitor;
